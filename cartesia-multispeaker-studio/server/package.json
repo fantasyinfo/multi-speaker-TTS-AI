@@ -1,0 +1,25 @@
+{
+  "name": "cartesia-multispeaker-studio-server",
+  "version": "1.0.0",
+  "description": "Backend API and WAV audio merger for Cartesia Multi-Speaker Studio",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^7.2.0",
+    "mongoose": "^8.8.4",
+    "sql.js": "^1.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

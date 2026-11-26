@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0b1020;
+    color: #edf2ff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0b1020;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #243456;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #354b7a;
+  }
+}
+
+.studio-card {
+  background: linear-gradient(180deg, rgba(23, 35, 59, 0.45) 0%, rgba(17, 26, 45, 0.92) 100%);
+  border: 1px solid rgba(145, 160, 189, 0.16);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(3, 8, 22, 0.35);
+}
+
+.studio-input {
+  background-color: #0e1628;
+  border: 1px solid rgba(145, 160, 189, 0.22);
+  color: #edf2ff;
+  border-radius: 0.625rem;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.studio-input:focus {
+  outline: none;
+  border-color: #9aabff;
+  box-shadow: 0 0 0 2px rgba(154, 171, 255, 0.18);
+}
+
+input[type='range'] {
+  accent-color: #9aabff;
+}
